@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luffy's Face</title>
+</head>
+<body>
+  <div class="face">
+    <div class="eye left">
+      <div class="pupil left"></div>
+    </div>
+    <div class="eye right">
+      <div class="pupil right"></div>
+    </div>
+    <div class="mouth"></div>
+  </div>
+</body>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000000;
+  }
+  .face {
+    width: 250px;
+    height: 250px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    position: relative;
+  }
+  .eye {
+    margin-top: 1cm;
+    margin-left: .5cm;
+    margin-right: .5cm;
+    width: 50px;
+    height: 50px;
+    background-color: #000000;
+    border-radius: 50%;
+    border: top 2px #000000;
+    position:absolute;
+  }
+  .eye.left {
+    top: 30px;
+    left: 30px;
+  }
+  .eye.right {
+    top: 30px;
+    right: 30px;
+  }
+  .pupil {
+    margin-left:.15cm;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+  }
+  .pupil.left {
+    margin-left:-.09cm;
+    top: 15px;
+    left: 15px;
+  }
+  .pupil.right {
+    top: 15px;
+    right: 15px;
+  }
+  .mouth {
+    width: 60px;
+    height: 20px;
+    background-color: transparent;
+    border-bottom: 22px solid #ffffff;
+    position: absolute;
+    bottom: 60px;
+    left: 95px;
+    transform: rotate(-5deg);
+  }
+</style>
+</html>
